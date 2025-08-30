@@ -3,11 +3,11 @@ from pydantic import BaseModel
 from pathlib import Path
 import numpy as np
 
-from app.ai.embed import embed_texts
-from app.index.vector_store import FaissStore
-from app.index.metadata_store import MetadataDB
-from app.ai.intent import parse_intent
-from app.runtime.executor import move_files
+from ai.embed import embed_texts
+from index.vector_store import FaissStore
+from index.metadata_store import MetadataDB
+from ai.intent import parse_intent
+from runtime.executor import move_files
 
 app = FastAPI(title="AI Filesystem API")
 

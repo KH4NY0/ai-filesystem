@@ -1,10 +1,10 @@
 import hashlib, os, time
 from pathlib import Path
 import numpy as np
-from app.ai.embed import embed_texts
-from app.index.vector_store import FaissStore
-from app.index.metadata_store import MetadataDB
-from app.ingest.readers import extract_content
+from ai.embed import embed_texts
+from index.vector_store import FaissStore
+from index.metadata_store import MetadataDB
+from ingest.readers import extract_content
 
 def file_id(path: Path) -> str:
     return hashlib.sha1(str(path.resolve()).encode()).hexdigest()
