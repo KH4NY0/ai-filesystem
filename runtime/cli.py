@@ -1,16 +1,16 @@
 import typer
 from pathlib import Path
 import numpy as np
-from app.ai.embed import embed_texts
-from app.index.vector_store import FaissStore
-from app.index.metadata_store import MetadataDB
-from app.runtime.executor import move_files
+from ai.embed import embed_texts
+from index.vector_store import FaissStore
+from index.metadata_store import MetadataDB
+from runtime.executor import move_files
 
 app = typer.Typer()
 
 @app.command()
 def index(root: str, store_path: str="data/faiss.index", db_path: str="data/meta.db"):
-    from app.index.indexer import batch_index
+    from index.indexer import batch_index
     fs = FaissStore(dim=384, path=Path(store_path))
     db = MetadataDB(Path(db_path))
     fs.load()  

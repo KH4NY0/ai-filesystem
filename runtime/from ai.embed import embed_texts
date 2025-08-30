@@ -1,0 +1,1 @@
+from ai.embed import embed_texts
