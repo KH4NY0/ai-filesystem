@@ -1,25 +1,3 @@
-# AI Filesystem
-
-An **AI-powered semantic filesystem** built with Python.  
-This project adds a smart layer on top of your normal files so you can:
-
--  Search files semantically (e.g., *“contracts about indemnity signed in 2023”*)  
--  Auto-tag and summarize documents  
--  Perform natural-language actions (*“move all old hero section designs to /Archive/Design”*)  
--  Keep everything up to date with a file watcher
-  
----
-
-## Features
-
-- **Multi-format ingestion**: text, markdown, PDFs, images (OCR).  
-- **Vector search** with FAISS or Chroma + embeddings.  
-- **Metadata storage** in SQLite.  
-- **Summarization & auto-tagging** using LLMs or rules.  
-- **CLI interface** for quick search and smart actions.  
-
----
-
 ## AI Filesystem
 
 A modular AI-powered filesystem for document indexing, semantic search, and smart file management using FastAPI, Typer CLI, and vector search.
