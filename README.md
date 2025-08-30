@@ -17,8 +17,6 @@ This project adds a smart layer on top of your normal files so you can:
 - **Metadata storage** in SQLite.  
 - **Summarization & auto-tagging** using LLMs or rules.  
 - **CLI interface** for quick search and smart actions.  
-- **API (FastAPI)** for building UIs.  
-- **FUSE integration** for mounting AI-driven virtual folders.  
 
 ---
 
